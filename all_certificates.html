@@ -1,0 +1,15 @@
+---
+layout: blogalltpl
+permalink: /api/certificates/all.json
+---
+{
+  "certificates": [
+    {% for item in site.certificates %}
+    {
+      "title": {{ item.title | jsonify }},
+      "description": {{ item.description | default: "" | jsonify }},
+      "year": {{ item.year | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

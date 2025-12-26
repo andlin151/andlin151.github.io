@@ -1,0 +1,17 @@
+---
+layout: blogalltpl
+permalink: /api/testimonials/all.json
+---
+{
+  "testimonials": [
+    {% for item in site.testimonials %}
+    {
+      "name": {{ item.name | jsonify }},
+      "source": {{ item.source | default: "" | jsonify }},
+      "photo": {{ item.photo | default: "" | jsonify }},
+      "content": {{ item.content | strip_html | strip_newlines | jsonify }}
+
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

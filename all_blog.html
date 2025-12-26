@@ -1,0 +1,18 @@
+---
+layout: blogalltpl
+permalink: /api/blog/all.json
+---
+{
+  "posts": [
+    {% for post in site.posts %}
+    {
+      "title": {{ post.title | jsonify }},
+      "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+      "url": {{ post.url | jsonify }},
+      "tags": {{ post.tags | default: empty | jsonify }},
+      "image": {{ post.image | default: "" | jsonify }},
+      "excerpt": {{ post.content | strip_html | truncatewords: 50 | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

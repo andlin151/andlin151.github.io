@@ -1,0 +1,14 @@
+---
+layout: blogalltpl
+permalink: /api/timeline/all.json
+---
+{
+  "timeline": [
+    {% for item in site.timeline %}
+    {
+      "title": {{ item.title | jsonify }},
+      "items": {{ item.items | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

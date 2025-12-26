@@ -1,0 +1,17 @@
+---
+layout: blogalltpl
+permalink: /api/portafolio/all.json
+---
+{
+  "proyectos": [
+    {% for proyecto in site.portafolio %}
+    {
+      "title": {{ proyecto.title | jsonify }},
+      "category": {{ proyecto.category | default: "" | jsonify }},
+      "image": {{ proyecto.image | default: "" | jsonify }},
+      "external_url": {{ proyecto.external_url | default: "" | jsonify }},
+      "description": {{ proyecto.content | strip_html | strip_newlines | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

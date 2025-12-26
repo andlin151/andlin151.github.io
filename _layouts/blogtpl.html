@@ -1,0 +1,10 @@
+---
+---
+{
+  "title": {{ page.title | jsonify }},
+  "date": {{ page.date | date: "%Y-%m-%d" | jsonify }},
+  "url": {{ page.url | jsonify }},
+  "tags": {{ page.tags | default: empty | jsonify }},
+  "image": {{ page.image | default: "" | jsonify }},
+  "content": {{ content | jsonify }}
+}

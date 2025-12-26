@@ -1,0 +1,13 @@
+---
+layout: blogalltpl
+permalink: /api/skill/all.json
+---
+{
+  "skill": [
+    {% for item in site.skill %}
+    {
+      "skills": {{ item.skills | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

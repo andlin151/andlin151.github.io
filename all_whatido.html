@@ -1,0 +1,16 @@
+---
+layout: blogalltpl
+permalink: /api/whatido/all.json
+---
+{
+  "whatido": [
+    {% for item in site.whatido %}
+    {
+      "title": {{ item.title | jsonify }},
+      "icon": {{ item.icon | default: "" | jsonify }},
+      "weight": {{ item.weight | default: 0 }},
+      "content": {{ item.content | strip_html | strip_newlines | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
