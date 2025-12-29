@@ -1,4 +1,5 @@
 ---
+published: false
 skills:
   - name: "Python"
     percentage: 90

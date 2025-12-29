@@ -1,5 +1,7 @@
 ---
+published: true
 skills:
+
   - name: "Linux"
     percentage: 95
   - name: "Windows Server"
