@@ -4,9 +4,7 @@ date:   2026-05-06 00:00:00 -0500
 tags: [seguridad, linux]
 image: /assets/img/Sick_Tux.png
 ---
-# Copy Fail (CVE-2026-31431): El error de optimización que dejó vulnerable a Linux durante 9 años
-
-El pasado 29 de abril de 2026, la comunidad de Linux fue sacudida por el descubrimiento de **CVE-2026-31431**, una vulnerabilidad bautizada como **"Copy Fail"**. Este fallo no solo permite a cualquier usuario local obtener privilegios de **root** de forma casi instantánea, sino que ya está siendo explotado activamente.
+Esta es la historia del error de optimización que dejó vulnerable a Linux durante 9 años. El pasado 29 de abril de 2026, la comunidad de Linux fue sacudida por el descubrimiento de **CVE-2026-31431**, una vulnerabilidad bautizada como **"Copy Fail"**. Este fallo no solo permite a cualquier usuario local obtener privilegios de **root** de forma casi instantánea, sino que ya está siendo explotado activamente.
 
 ## ¿Qué es CVE-2026-31431 o "Copy Fail"?
 
@@ -72,7 +70,7 @@ Resulta cuando menos irónico que una optimización de rendimiento escrita hace 
 
 ---
 
-## Fuentes y Referencias
+## Fuentes
 
 *   **Repositorio Original del Exploit:** [theori-io/copy-fail-CVE-2026-31431](https://github.com/theori-io/copy-fail-CVE-2026-31431)
 *   **Investigación Técnica:** [Theori Xint - Copy Fail Analysis](https://xint.io/blog/copy-fail-linux-kernel-vulnerability)
