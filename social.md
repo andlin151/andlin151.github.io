@@ -8,4 +8,5 @@ github_account: "https://github.com/andlin151/"
 instagram_account: ""
 youtube_account: ""
 mastodon_account: ""
+signal_account: "https://signal.me/#p/@andres.151"
 ---
