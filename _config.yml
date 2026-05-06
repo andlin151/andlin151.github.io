@@ -65,3 +65,8 @@ defaults:
       path: "cv.md"
     values:
       layout: "cvtpl"
+
+# Files excluded from Jekyll build
+exclude:
+  - dev.sh
+  - cors.py
