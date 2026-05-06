@@ -69,4 +69,5 @@ defaults:
 # Files excluded from Jekyll build
 exclude:
   - dev.sh
+  - deploy.sh
   - cors.py
