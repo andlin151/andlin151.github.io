@@ -4,6 +4,7 @@
   "title": {{ page.title | jsonify }},
   "category": {{ page.category | default: "" | jsonify }},
   "image": {{ page.image | default: "" | jsonify }},
-  "external_url": {{ page.external_url | default: "" | jsonify }},
-  "description": {{ content | strip_html | strip_newlines | jsonify }}
+  "project_url": {{ page.project_url | default: "" | jsonify }},
+  "description": {{ page.description | strip_html | strip_newlines | jsonify }},
+  "contents": {{ content | strip_html | strip_newlines | jsonify }}
 }
