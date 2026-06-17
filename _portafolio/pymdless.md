@@ -1,6 +1,6 @@
 ---
 title: PyMDLess
-category: Web
+category: Python
 image: /assets/img/pymdless.png
 project_url: https://github.com/andlin151/pymdless/
 description: Una herramienta TUI para leer archivos Markdown con soporte para imágenes
