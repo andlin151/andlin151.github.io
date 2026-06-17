@@ -11,7 +11,7 @@ permalink: /api/portafolio/all.json
       "image": {{ proyecto.image | default: "" | jsonify }},
       "project_url": {{ proyecto.project_url | default: "" | jsonify }},
       "description": {{ proyecto.description | default: "" | jsonify }},
-      "contents": {{ proyecto.content | strip_html | strip_newlines | jsonify }}
+      "contents": {{ proyecto.content | jsonify }} # strip_html y strip_newlines  se van
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ]
