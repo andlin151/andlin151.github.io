@@ -9,4 +9,5 @@ instagram_account: ""
 youtube_account: ""
 mastodon_account: ""
 signal_account: "https://signal.me/#p/@andres.151"
+whatsapp_account: "https://wa.me/@andlin"
 ---
